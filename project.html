@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://kit.fontawesome.com/4d8badcc53.js" crossorigin="anonymous"></script>
+	</head>
+	<body style="background-image: url(./assets/image/laptop.jpg)">
+		<!-- navigation bar -->
+		<nav>
+			<ul class="sidebar">
+				<li onclick="hideSidebar()">
+					<a href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+				</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a class="link-active" href="project.html">Project</a></li>
+				<li><a href="testimonial.html">Testimonial</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul>
+				<li>
+					<a href="index.html"><img src="./assets/icon/colors-icon.svg" style="width: 1.5rem" /></a>
+				</li>
+				<li class="hide-on-mobile"><a href="index.html">Home</a></li>
+				<li class="hide-on-mobile"><a class="link-active" href="project.html">Project</a></li>
+				<li class="hide-on-mobile"><a href="testimonial.html">Testimonial</a></li>
+				<li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+				<li class="menu-button" onclick="showSidebar()">
+					<a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- navigation bar -->
+
+		<div class="container" style="padding-top: 1rem; padding-bottom: 1rem">
+			<div class="form-container" id="contactForm">
+				<form onsubmit="addProject(event)">
+					<div class="row text-header">
+						<h1>ADD PROJECT</h1>
+					</div>
+					<hr style="width: 100%" />
+					<div class="row">
+						<div class="col-25">
+							<label for="pname">Project Name</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="pName" name="pname" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25 col-hide" style="margin-top: 0">
+							<label></label>
+						</div>
+						<div class="col-75" style="margin-top: 0">
+							<div class="form-date">
+								<div class="col-50">
+									<label for="startDate" style="margin-top: 0">Start Date</label>
+									<input type="date" id="startDate" name="start-date" class="form-input" />
+								</div>
+								<div class="col-50">
+									<label for="endDate" style="margin-top: 0">End Date</label>
+									<input type="date" id="endDate" name="end-date" class="form-input" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="description">Description</label>
+						</div>
+						<div class="col-75">
+							<textarea id="pDescription" name="description" style="height: 200px"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="description">Description</label>
+						</div>
+						<div class="col-75" style="padding: 1rem 0">
+							<ul class="project-tech">
+								<li>
+									<input type="checkbox" id="check1" name="check1" value="Javascript" />
+									<label for="check1">Javascript</label>
+								</li>
+								<li>
+									<input type="checkbox" id="check2" name="check2" value="Node Js" />
+									<label for="check2">Node Js</label>
+								</li>
+								<li>
+									<input type="checkbox" id="check3" name="check3" value="React Js" />
+									<label for="check3">React Js</label>
+								</li>
+								<li>
+									<input type="checkbox" id="check4" name="check4" value="PostgreSQL" />
+									<label for="check4">PostgreSQL</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="fileupload">Upload Image</label>
+						</div>
+						<div
+							class="col-75"
+							style="border: 1px solid #ccc; border-radius: 0.5rem; padding: 0.5rem">
+							<input type="file" id="fileUpload" name="fileupload" style="width: 100%" />
+						</div>
+					</div>
+					<br />
+					<div class="row">
+						<input type="submit" value="ADD PROJECT" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<!-- project list -->
+		<section class="list-container">
+			<div style="margin-bottom: 3rem; text-align: center">
+				<h1>PROJECT LIST</h1>
+			</div>
+			<div id="projectGrid">
+				<div class="card">
+					<div class="list-image">
+						<img src="./assets/image/blog-img.png" alt="article image" />
+					</div>
+					<div style="margin: 1rem auto">
+						<h3>Title</h3>
+						<p>
+							Posted at :
+							<br />
+							Duration :
+						</p>
+					</div>
+					<p class="list-content">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime maiores voluptatum
+						natus, voluptates iste earum harum sint vero dolorem inventore ipsa ipsam cupiditate in.
+						Dolor sapiente perspiciatis placeat amet illum!
+					</p>
+					<div class="list-tech">
+						<img src="./assets/icon/javascript-icon.svg" title="Javascript" />
+						<img src="./assets/icon/node-js-icon.svg" title="Node Js" />
+						<img src="./assets/icon/react-js-icon.svg" title="React js" />
+						<img src="./assets/icon/postgresql-icon.svg" title="PostgreSQL" />
+					</div>
+					<div style="display: flex; gap: 1rem">
+						<input style="width: 100%" type="submit" value="EDIT" />
+						<input style="width: 100%" type="submit" value="DELETE" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="./js/navbar.js"></script>
+		<script src="./js/email-form.js"></script>
+		<script src="./js/project.js"></script>
+	</body>
+</html>

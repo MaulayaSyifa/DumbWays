@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Testimonial</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://kit.fontawesome.com/4d8badcc53.js" crossorigin="anonymous"></script>
+	</head>
+	<body style="background-image: url(./assets/image/laptop.jpg)">
+		<!-- navigation bar -->
+		<nav>
+			<ul class="sidebar">
+				<li onclick="hideSidebar()">
+					<a href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+				</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="project.html">Project</a></li>
+				<li><a class="link-active" href="testimonial.html">Testimonial</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul>
+				<li>
+					<a href="index.html"><img src="./assets/icon/colors-icon.svg" style="width: 1.5rem" /></a>
+				</li>
+				<li class="hide-on-mobile"><a href="index.html">Home</a></li>
+				<li class="hide-on-mobile"><a href="project.html">Project</a></li>
+				<li class="hide-on-mobile">
+					<a class="link-active" href="testimonial.html">Testimonial</a>
+				</li>
+				<li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+				<li class="menu-button" onclick="showSidebar()">
+					<a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- navigation bar -->
+
+		<div class="container">
+			<div class="star">
+				<h2>TESTIMONIALS</h2>
+				<h4>Rating by stars</h4>
+				<div class="container-sm text-center d-flex flex-row justify-content-center gap-3">
+					<button onclick="showAllTestimonials()" type="button" class="btn btn-star">All</button>
+					<button type="button" onclick="filterTestimonialByStar(1)" class="btn btn-star">
+						1&nbsp;<i class="fa-solid fa-star fa-xs"></i>
+					</button>
+					<button type="button" onclick="filterTestimonialByStar(2)" class="btn btn-star">
+						2&nbsp;<i class="fa-solid fa-star fa-xs"></i>
+					</button>
+					<button type="button" onclick="filterTestimonialByStar(3)" class="btn btn-star">
+						3&nbsp;<i class="fa-solid fa-star fa-xs"></i>
+					</button>
+					<button type="button" onclick="filterTestimonialByStar(4)" class="btn btn-star">
+						4&nbsp;<i class="fa-solid fa-star fa-xs"></i>
+					</button>
+					<button type="button" onclick="filterTestimonialByStar(5)" class="btn btn-star">
+						5&nbsp;<i class="fa-solid fa-star fa-xs"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="list-container">
+			<div id="testimonialsContainer" class="star-list">
+				<div class="star-card">
+					<p>testimonial</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/navbar.js"></script>
+		<script src="./js/email-form.js"></script>
+		<script src="./js/project.js"></script>
+		<script src="./js/testimonial.js"></script>
+	</body>
+</html>

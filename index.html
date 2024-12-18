@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://kit.fontawesome.com/4d8badcc53.js" crossorigin="anonymous"></script>
+	</head>
+	<body style="background-image: url(./assets/image/laptop.jpg)">
+		<!-- navigation bar -->
+		<nav>
+			<ul class="sidebar">
+				<li onclick="hideSidebar()">
+					<a href="#"><i class="fa-solid fa-xmark fa-xl"></i></a>
+				</li>
+				<li><a class="link-active" href="index.html">Home</a></li>
+				<li><a href="project.html">Project</a></li>
+				<li><a href="testimonial.html">Testimonial</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<ul>
+				<li>
+					<a href="index.html"><img src="./assets/icon/colors-icon.svg" style="width: 1.5rem" /></a>
+				</li>
+				<li class="hide-on-mobile"><a class="link-active" href="index.html">Home</a></li>
+				<li class="hide-on-mobile"><a href="project.html">Project</a></li>
+				<li class="hide-on-mobile"><a href="testimonial.html">Testimonial</a></li>
+				<li class="hide-on-mobile"><a href="contact.html">Contact</a></li>
+				<li class="menu-button" onclick="showSidebar()">
+					<a href="#"><i class="fa-solid fa-bars fa-xl"></i></a>
+				</li>
+			</ul>
+		</nav>
+		<!-- navigation bar -->
+
+		<div class="container">
+			<div class="card-container">
+				<div class="card-content">
+					<div>
+						<h1 style="margin-bottom: 1rem">Hi, Welcome to my hut</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, dolores sint eius
+							laborum laboriosam ullam blanditiis vero corporis eligendi dolore! Enim eaque id iure
+							incidunt? Aliquid a mollitia laborum veniam. Lorem ipsum dolor sit amet consectetur
+							adipisicing elit. Illo nulla pariatur maxime quam atque iste corporis suscipit ex
+							labore temporibus laboriosam, exercitationem vero nostrum! Quae magnam natus fuga odio
+							rem!
+						</p>
+					</div>
+					<div class="card-link">
+						<div>
+							<a href="contact.html" class="btn"
+								><i class="fa fa-envelope"></i>&nbsp;&nbsp;contact me</a
+							>
+						</div>
+						<div>
+							<a href="resume.html" class="btn"
+								><i class="fa fa-download"></i>&nbsp;&nbsp;download CV</a
+							>
+						</div>
+					</div>
+					<div class="social-icon">
+						<div>
+							<a href="https://www.linkedin.com/in/syifamaulaya/" target="_blank"
+								><img src="./assets/icon/linkedin.svg" alt="linkedin"
+							/></a>
+						</div>
+						<div>
+							<a href="https://www.instagram.com/maulayasyifa_/" target="_blank"
+								><img src="./assets/icon/instagram.svg" alt="instagram"
+							/></a>
+						</div>
+						<div>
+							<a href="https://www.threads.net/@alterashy" target="_blank"
+								><img src="./assets/icon/threads.svg" alt="threads"
+							/></a>
+						</div>
+						<div>
+							<a href="https://wa.me/628816538436" target="_blank"
+								><img src="./assets/icon/whatsapp-business.svg" alt="whatsapp-business"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div class="card-image">
+					<div>
+						<img src="./assets/image/Syifa Maulaya_Hitam Putih.jpg" alt="" />
+					</div>
+					<div class="card-image-text">
+						<h2>SYIFA MAULAYA</h2>
+						<h4>Fullstack Developer</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/navbar.js"></script>
+		<script src="./js/email-form.js"></script>
+		<script src="./js/project.js"></script>
+	</body>
+</html>
